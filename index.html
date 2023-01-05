@@ -29,6 +29,8 @@
         async function postapi(url) {
             const response = await fetch(url, {
                 method: 'POST',
+                crossorigin: true,  
+                mode: 'no-cors', 
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
