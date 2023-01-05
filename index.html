@@ -30,7 +30,7 @@
             
             e.preventDefault();
             const formData = new FormData(thisForm).entries()
-            const response = await fetch('https://localhost:44318/api/values', {
+            const response = await fetch('https://firstwebapplication20221220031324.azurewebsites.net/api/data', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(Object.fromEntries(formData))
